@@ -36,9 +36,11 @@ We can simulate a discrete version of this filter with the same resonnant freque
 
 The filter can be expressed as
 
-$$a^N\prod_{k=1...N} \frac{1}{1 - z^{-1}x^k}$$
+$$a^N\prod_{k=1...N} \frac{1}{1 - z^{-1}z_k}$$
 
-if $|a| < 1$.
+if $|z_k| < 1$.
+
+$z_k = \exp(2 i \pi x_k)$ where $x_k$ is the normalized frequency.
 
 
 ## Cutoff frequency
