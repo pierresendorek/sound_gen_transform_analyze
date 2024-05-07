@@ -1,7 +1,7 @@
 
 ## Finding the resonnant frequencies
 
-Assume we woule like a filter with a spectrum whose shape is
+Assume we would like a filter with a spectrum whose shape is
 
 
 $$\frac{1}{1 +  \left(\frac{x}{a}\right)^{2n}}$$
@@ -46,12 +46,15 @@ if $|z_k| < 1$.
 
 $z_k = \exp(2 i \pi x_k)$ where $x_k$ is the normalized frequency.
 
+However the series expansion leads to divergent terms
+
 
 ## Cutoff frequency
 
 
 $$\frac{1}{1 +  \left(\frac{x}{a}\right)^{2n}} = \frac{1}{2}$$
 
+if 
 $$1 +  \left(\frac{x}{a}\right)^{2n} = 2$$
 $$ \left(\frac{x}{a}\right)^{2n} = 1$$
 $$ x=a$$
