@@ -1,7 +1,7 @@
 
 ## Finding the resonnant frequencies
 
-Assume we woule like a filter with an spectrum whose shape is
+Assume we woule like a filter with a spectrum whose shape is
 
 
 $$\frac{1}{1 +  \left(\frac{x}{a}\right)^{2n}}$$
@@ -13,7 +13,7 @@ $$(x/a)^{N} + 1 = 0$$
 where $N = 2n$.
 
 
-Let's check if the following candidates, for $k=1,...,N$, can be a solution
+Let's check if the following candidates, for $k=1,...,N$ can be a solution
 
 $$x_k = a \exp\left(\frac{-i \pi}{N}\right) \exp\left( \frac{i 2k \pi}{N} \right)$$
 
@@ -31,10 +31,14 @@ Thus
 $$1 + \left(\frac{x}{a}\right)^{N} = \prod_{k=1...N} \frac{x - x_k}{a}$$
 $$ = \frac{1}{a^N} \prod_{k=1...N}  x - x_k$$
 
-We can simulate a discrete version of this filter with the same resonnant frequencies.
+## Discrete simulation
+
+We can simulate a discrete version of this filter with the similar resonnant frequencies.
 
 
 The filter can be expressed as
+
+Let $z_k = \exp(2 i \pi x_k)$ if $\mathcal{Re}(x_k) > 0$
 
 $$a^N\prod_{k=1...N} \frac{1}{1 - z^{-1}z_k}$$
 
@@ -44,3 +48,10 @@ $z_k = \exp(2 i \pi x_k)$ where $x_k$ is the normalized frequency.
 
 
 ## Cutoff frequency
+
+
+$$\frac{1}{1 +  \left(\frac{x}{a}\right)^{2n}} = \frac{1}{2}$$
+
+$$1 +  \left(\frac{x}{a}\right)^{2n} = 2$$
+$$ \left(\frac{x}{a}\right)^{2n} = 1$$
+$$ x=a$$
