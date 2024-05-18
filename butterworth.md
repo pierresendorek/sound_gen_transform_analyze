@@ -62,24 +62,24 @@ $$\frac{1}{1 - z_k z^{-1}}$$
 
 we use
 
-$$\frac{|z_k|}{1 - (z \bar{z}_k)^{-1}}$$
+$$\frac{1}{|z_k|(1 - (z \bar{z}_k)^{-1})}$$
 
 This way we keep the same resonnant frequency but we change the phase.
 
 It may be desirable to keep the same phase for the 0 frequency, which amounts to multiplying by a constant $C$ which ensures that, by replacing $z = e^{2 i \pi 0} = 1$
 
-$$\frac{1}{1 - z_k} = \frac{C |z_k|}{1 - \bar{z}_k^{-1}}$$
+$$\frac{1}{1 - z_k} = \frac{C }{|z_k|(1 - \bar{z}_k^{-1})}$$
 
-This constant is 
+This constant is the following and it lies on the unit circle
 
-$$C = \frac{1 - \bar{z}_k^{-1}}{(1 - z_k)|z_k|} $$
-
-
+$$C = |z_k|\frac{1 - \bar{z}_k^{-1}}{(1 - z_k)} $$
 
 
 
 
-## Cutoff frequency
+
+
+## Cutoff frequency in continuous time
 
 
 $$\frac{1}{1 +  \left(\frac{x}{a}\right)^{2n}} = \frac{1}{2}$$
