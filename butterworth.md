@@ -35,6 +35,39 @@ It means that the continuous time filter has the following spectrum
 
 $$\frac{1}{1 + (\frac{x}{a})^{N}} = a^N \prod_{k=1...N} \frac{1}{x - x_k}$$
 
+And its Fourier transform is the multiple convolution product of
+
+$$
+t \mapsto \prod^*_{k=1...N} a \exp(- x_k t) \mathbb{I}(t > 0)
+$$
+
+<!-- See this part again -->
+Indeed, since (when the real part of $y > 0$)
+$$ \int_0^{\infty} \exp( -yt) \exp(-2 i \pi t) dt$$
+
+$$ = \Big[\frac{\exp((-y - 2 i \pi) t)}{-y - 2 i \pi} \Big]_{t=0}^{t=\infty}$$
+
+$$ = \frac{1}{y + 2 i \pi} $$
+
+Now we solve
+$$ \frac{C}{y + 2 i \pi}  = \frac{1}{x - x_k}$$
+Which means
+
+$$ C = - 2 i \pi / x_k $$
+
+And
+$$ y/C = x $$
+$$ y = - 2 i \pi x / x_k $$
+
+
+It means that
+$$\frac{1}{x - x_k}$$
+
+is the Fourier transform of
+
+$$t \mapsto C \exp(-yt) = - \frac{2 i \pi}{x_k} \exp(2 i \pi t x / x_k) $$
+
+
 
 ## Discrete simulation
 
